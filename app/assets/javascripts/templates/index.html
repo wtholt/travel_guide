@@ -1,0 +1,8 @@
+<a ng-click='createNew()'>Create New City</a>
+<ul>
+  <li ng-repeat="city in cities.cities">
+    {{ city.name }} - {{ city.info }} - {{ city.population }}
+    <button ng-click="editCity(city.id)">Edit</button>
+    <button ng-click="deleteCity(city.id)">Delete</button>
+  </li>
+</ul>
