@@ -1,3 +1,97 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #F9FBFA;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-family: 'Gentium Book Basic', serif;
+}
+
+li {
+  font-family: 'Vollkorn', serif;
+}
+.jumbotron-header {
+  background-image: url('road.jpg');
+  background-image: no-repeat;
+  background-size: cover;
+  background-position: 100% 60%;
+  padding: 200px 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+}
+
+.jumbotron-plane {
+  background-image: url('plane.jpg');
+  background-image: no-repeat;
+  background-size: cover;
+  background-position: 100% 60%;
+  padding: 100px 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.jumbotron-map {
+  background-image: url('map.jpg');
+  background-image: no-repeat;
+  background-size: cover;
+  background-position: 100% 60%;
+  padding: 100px 15px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 15px;
+  color: inherit;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.icon-bus {
+  background-image: url('bus.png');
+  background-image: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.icon-passport {
+  background-image: url('passport.png');
+  background-image: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.icon-drink {
+  background-image: url('drink.png');
+  background-image: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.plane-icon {
+  background-image: url('plane-icon.png');
+  background-image: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.col-md-8 {
+  border-right: 5px dashed #333;
+}
+
+span.glyphicon-plus {
+  display: block;
+  font-size: 1.7em;
+  text-align: right;
+}
+
+li.list-group-item {
+  background-color: #fff;
+  border-radius: 15px;
+}

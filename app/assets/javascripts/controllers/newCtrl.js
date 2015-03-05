@@ -4,6 +4,10 @@ germanyMap.controller('newCtrl', function($location, $scope, cityData){
     $location.url('/');
   }
 
+  $scope.cancel = function() {
+    $location.url('/');
+  }
+
   $scope.submitForm = function() {
     cityData.addCity(
     {

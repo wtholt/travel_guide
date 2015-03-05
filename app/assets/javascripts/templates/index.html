@@ -1,8 +1,15 @@
-<a ng-click='createNew()'>Create New City</a>
-<ul>
-  <li ng-repeat="city in cities.cities">
-    {{ city.name }} - {{ city.info }} - {{ city.population }}
-    <button ng-click="editCity(city.id)">Edit</button>
-    <button ng-click="deleteCity(city.id)">Delete</button>
+<h3>Current Destinations</h3> 
+<span ng-click='createNew()' class="glyphicon glyphicon-plus"></span>
+<br>
+<ul class="list-unstyled">
+  <li ng-repeat="city in cities.cities" class="list-group-item">
+    <label>Name</label> {{ city.name }}
+    <br>
+    <label>Info - </label><br>{{ city.info }}
+    <br>
+    <label>Population</label> {{ city.population }}
+    <br>
+    <span class="glyphicon glyphicon-wrench" ng-click="editCity(city.id)"></span>
+    <span class="glyphicon glyphicon-trash" ng-click="deleteCity(city.id)"></span>
   </li>
 </ul>

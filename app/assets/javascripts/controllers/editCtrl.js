@@ -1,12 +1,23 @@
 germanyMap.controller('editCtrl', function($location, $scope, cityData, $routeParams, $q){
   console.log('inside edit ctrl')
 
+  $scope.rootPath = function() {
+    $location.url('/');
+  }
+
+  $scope.cancel = function() {
+    $location.url('/');
+  }
+
   $scope.editCity = null;
   $scope.findCity = function(){
     $scope.editCity = cityData.findCity($routeParams.id)
   }
 
   $scope.findCity();
+  this.deferred = $q.defer();
+  this.deferred.promise.then($scope.findCity);
+  cityData.loadCities(this.deferred);
   $scope.submitForm = function(){
     cityData.updateCity(
     {
