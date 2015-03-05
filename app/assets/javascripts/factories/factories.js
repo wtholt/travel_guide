@@ -1,4 +1,4 @@
-germanyMap.factory(['$http', 'cityData', function($http) {
+germanyMap.factory('cityData',['$http', function($http) {
   cityData = {
     data: {
       cities: [

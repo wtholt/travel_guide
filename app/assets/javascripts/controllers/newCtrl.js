@@ -1,4 +1,4 @@
-germanyMap.controller(['$location', '$scope', 'cityData', 'newCtrl', function($location, $scope, cityData){
+germanyMap.controller('newCtrl', ['$location', '$scope', 'cityData', function($location, $scope, cityData){
 
   $scope.rootPath = function() {
     $location.url('/');
