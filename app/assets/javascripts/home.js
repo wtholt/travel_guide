@@ -1,9 +1,9 @@
 var germanyMap = angular
   .module('germanyMap', ['ngRoute'])
-  .config(function($httpProvider){
+  .config(['$httpProvider', function($httpProvider){
     $httpProvider.defaults.headers.common['X-CSRF-Token'] = $("meta[name=csrf-token]").attr("content");
-  })
-  .config(function($routeProvider){
+  }])
+  .config(['$routeProvider', function($routeProvider){
     $routeProvider
       .when('/cities/new', {
         templateUrl: 'assets/templates/new.html',
@@ -17,5 +17,5 @@ var germanyMap = angular
         templateUrl: 'assets/templates/index.html',
         controller: 'indexCtrl'
       })
-  })
+  }])
 ;

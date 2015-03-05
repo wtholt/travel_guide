@@ -1,4 +1,4 @@
-germanyMap.controller('editCtrl', function($location, $scope, cityData, $routeParams, $q){
+germanyMap.controller(['$location', '$scope', 'cityData', '$routeParams', '$q', 'editCtrl', function($location, $scope, cityData, $routeParams, $q){
   console.log('inside edit ctrl')
 
   $scope.rootPath = function() {
@@ -31,4 +31,4 @@ germanyMap.controller('editCtrl', function($location, $scope, cityData, $routePa
     $scope.editCity.population = '';
     $location.url('/');
   }
-})
+}])

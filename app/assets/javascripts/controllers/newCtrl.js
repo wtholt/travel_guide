@@ -1,4 +1,4 @@
-germanyMap.controller('newCtrl', function($location, $scope, cityData){
+germanyMap.controller(['$location', '$scope', 'cityData', 'newCtrl', function($location, $scope, cityData){
 
   $scope.rootPath = function() {
     $location.url('/');
@@ -21,4 +21,4 @@ germanyMap.controller('newCtrl', function($location, $scope, cityData){
     $scope.formCityPopulation = '';
     $location.url('/')
   };
-})
+}])

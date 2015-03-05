@@ -1,4 +1,4 @@
-germanyMap.factory('cityData', function($http) {
+germanyMap.factory(['$http', 'cityData', function($http) {
   cityData = {
     data: {
       cities: [
@@ -50,4 +50,4 @@ germanyMap.factory('cityData', function($http) {
 
   return cityData;
 
-})
+}])

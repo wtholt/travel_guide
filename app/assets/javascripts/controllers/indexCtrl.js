@@ -1,4 +1,4 @@
-var indexCtrl = germanyMap.controller('indexCtrl', function($scope, cityData, $location){
+var indexCtrl = germanyMap.controller(['$scope', 'cityData', '$location', 'indexCtrl', function($scope, cityData, $location){
   console.log('inside indexCtrl');
   $scope.cities = cityData.data;
   $scope.formCityName = '';
@@ -18,4 +18,4 @@ var indexCtrl = germanyMap.controller('indexCtrl', function($scope, cityData, $l
     $location.url('/cities/' + cityId + '/edit')
   }
 
-});
+}]);
